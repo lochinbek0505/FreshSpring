@@ -6,7 +6,8 @@
 
 
     <bean id="dev" class="org.example.Dev">
-
+<!--        <constructor-arg value="45"/>-->
+    <constructor-arg ref="laptop"/>
     </bean>
 
     <bean id="laptop" class="org.example.Laptop">
