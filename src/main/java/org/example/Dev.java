@@ -4,7 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Dev {
-    private    Laptop laptop;
+
+    private Computer computer;
 
    private int age;
     public Dev(){
@@ -13,9 +14,6 @@ public class Dev {
 
     }
 
-    public Dev(Laptop laptop) {
-        this.laptop = laptop;
-    }
 
     public int getAge() {
         return age;
@@ -25,12 +23,12 @@ public class Dev {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 
     public void build(){
